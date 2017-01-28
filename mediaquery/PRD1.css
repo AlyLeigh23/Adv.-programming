@@ -1,0 +1,112 @@
+body {	
+	width:99%;
+	background-image:url("seigaiha.png");
+}
+
+figure {
+	margin:auto;
+	max-width:100%;
+	height:auto;
+}
+
+article {
+	background-color:#ffffff;
+	border-radius:10px;
+	padding:1em;
+}
+
+nav {
+	margin-bottom:1em;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2c3e50;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: #2980b9;
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+img {
+	width:100%;
+	height:auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Here are the CSS rules you will edit for the assignment. When you 'float' your columns, you should not need the sidebar2 class, but feel free to use it, if you like. Also, don't forget to add spacing between the columns to make them look nice (do it however you like).*/
+.col-1 {position: relative;
+float: left;
+margin: 0 2%;
+width: 650px;
+	
+}
+
+.col-2 {position: relative;
+float: left;
+width: 250px;
+margin: 0 2%;
+}
+
+.col-3 {position: relative;
+float: right;
+width: 250px;
+margin-right: 10px
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 60%;}
+    .col-m-2 {width: 20%;}
+    .col-m-3 {width: 20%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 60%;}
+    .col-2 {width: 20;}
+    .col-3 {width: 20%;}
+
+}
